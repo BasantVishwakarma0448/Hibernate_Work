@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-Dec-2022, 11:19:21 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.rays.pojo.User" table="USER">
+		 <cache usage="read-only" />
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property generated="never" lazy="false" name="Fname"
+			type="java.lang.String">
+			<column name="FNAME" />
+		</property>
+		<property generated="never" lazy="false" name="Lname"
+			type="java.lang.String">
+			<column name="LNAME" />
+		</property>
+		<property generated="never" lazy="false" name="userName"
+			type="java.lang.String">
+			<column name="USERNAME" />
+		</property>
+		<property generated="never" lazy="false" name="pwd"
+			type="java.lang.String">
+			<column name="PWD" />
+		</property>
+	</class>
+</hibernate-mapping>

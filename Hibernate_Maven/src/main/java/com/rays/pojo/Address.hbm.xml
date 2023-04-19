@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-Jan-2023, 2:27:09 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rays.pojo.Address" table="ADDRESS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="foreign">
+				<param name="property">Employee</param>
+			</generator>
+        </id>
+        <property name="State" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="Street" type="java.lang.String">
+            <column name="STREET" />
+        </property>
+    </class>
+</hibernate-mapping>
